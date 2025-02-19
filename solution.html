@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct way to use DOM methods for inserting HTML
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is a properly nested paragraph.";
+    document.getElementById("myDiv").appendChild(newParagraph);
+  </script>
+</body>
+</html>
