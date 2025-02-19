@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrect use of innerHTML with a partially formed HTML string
+    document.getElementById("myDiv").innerHTML = "<p>This is a <p>paragraph</p>"; 
+  </script>
+</body>
+</html>
